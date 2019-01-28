@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="EUC-KR" standalone="no"?>
+<!DOCTYPE booklist SYSTEM "bml.dtd">
+<booklist>
+	<book kind="computer">
+		<isbn>100</isbn>
+		<title>JSP And Servlet</title>
+		<author>이규미</author>
+		<publisher>인포북</publisher>
+		<price>25000</price>
+	</book>
+	<book kind="computer">
+		<isbn>110</isbn>
+		<title>Inside XML</title>
+		<author>신민철</author>
+		<publisher>디지털북스</publisher>
+		<price>30000</price>
+	</book>
+	<book kind="language">
+		<isbn>120</isbn>
+		<title>쉽게 배우는 영어</title>
+		<author>채규태</author>
+		<publisher>시사영어사</publisher>
+		<price>20000</price>
+	</book>
+	<book kind="computer">
+		<isbn>130</isbn>
+		<title>XML 전자상거래</title>
+		<author>이종호</author>
+		<publisher>정보문화사</publisher>
+		<price>28000</price>
+	</book>
+	<book kind="소설">
+		<isbn>200</isbn>
+		<title>사랑과 전쟁</title>
+		<author>이사랑</author>
+		<publisher>전쟁문화사</publisher>
+		<price>15000</price>
+	</book>
+	<book kind="수필">
+		<isbn>210</isbn>
+		<title>사랑을 느끼세요</title>
+		<author>이사랑</author>
+		<publisher>사랑출판사</publisher>
+		<price>15000</price>
+	</book>
+	<book kind="잡지">
+		<isbn>230</isbn>
+		<title>월간 중앙</title>
+		<author>중앙일보기자</author>
+		<publisher>중앙일보사</publisher>
+		<price>18000</price>
+	</book>
+	<book kind="잡지">
+		<isbn>280</isbn>
+		<title>주간 경제지</title>
+		<author>조선일보기자</author>
+		<publisher>조선일보사</publisher>
+		<price>27000</price>
+	</book>
+	<book kind="추리">
+		<isbn>300</isbn>
+		<title>눈온다는</title>
+		<author>다다</author>
+		<publisher>푸른하우스</publisher>
+		<price>5000</price>
+	</book>
+</booklist>
