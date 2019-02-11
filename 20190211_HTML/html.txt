@@ -1,0 +1,12 @@
+HTML5 = Hyper Text Markup Language 5의 약자.
+웹 문서 제작을 위한 표준. HTML + CSS3 + Javascript의 분리되지 않은 하나의 통합된 체제.
+
+HTML -> Contents 내용 제작.
+CSS3 -> Style Design (색깔, 크기)
+JavaScript -> 기능부여 (조건 check, 계산 등.. 간단한 것)
+
+Presentation Layer  -> Logic Layer로 보내기 전에, 
+간단한 내용들은 JavaScript를 통해 처리. (Ex, Login -> 올바른 데이터가 들어가있는지에 대한 간단한 Check)
+
+
+

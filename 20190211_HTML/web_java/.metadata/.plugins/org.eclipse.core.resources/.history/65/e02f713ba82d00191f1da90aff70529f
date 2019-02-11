@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My page Title</title>
+	</head>
+	
+	<body>
+	<!-- hn: heading tag. 제목달기 -->
+		<h1>1woo</h1>
+		<h2>2woo</h2>
+		<h3>3woo</h3>
+		<h4>1</h4>
+		<h5>2</h5>
+		<h6>3</h6>
+	</body>
+</html>

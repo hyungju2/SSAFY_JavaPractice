@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>image tag</h1>
+<a href="First.html">
+<img src="../images/sydney.png" alt="시드니 오페라 하우스 " width="200px" height="200px">
+</a>
+</body>
+</html>

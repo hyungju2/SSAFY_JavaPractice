@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Form test</h1>
+<form method = "post" action="welcome.jsp">
+	<input type="color"><br>
+	<input type="date"><br>
+	<input type="email"><br>
+	<input type="range" min="1" max="10" step="1"><br>
+	<input type="url"><br>
+	<input type="search"><br>
+	
+	
+
+</form>
+</body>
+</html>

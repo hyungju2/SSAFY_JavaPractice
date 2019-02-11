@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>SSAFY 극장</title>
+</head>
+<body>
+<h1> SSAFY 극장</h1>
+	<header>
+		<nav>
+			<li><a href="#">영화</a></li>
+			<li><a href="#">극장</a></li>
+			<li><a href="#">예매</a></li>
+			<li><a href="#">이벤트</a></li>
+			<li><a href="#">상영영화소개.RSS</a></li>
+		</nav>
+	</header>
+<br>
+<h1> 무공해 힐링 시네마 </h1>
+<br>
+<p>무공해 힐링 시네마는 새로운 개념의 영화장르의 한가지를 말하는 것입니다. 지친 영혼을 위한 휴식을 주는 영화나 마음을 정화시키고 치유하는 힘을 가진 영화들...
+<br>
+<img src="../images/movie_image.jpg" alt="쿵푸 팬더" width="800px" height="400px">
+<br>
+<h1> 쿵 푸 팬 더</h1>
+<br>
+
+<h2>개 봉</h2> 2011. 5. 26
+<h2>감 독</h2> 여 인 영
+<h2>등 급</h2> [국내] 전체 관람가
+
+<br>
+<p>하.면.된.다 - 포.스.작.렬
+<br>
+'평화의 계곡'에서 아버지의 국수 가게를 돕고 있는 팬더, 포. 아버지는 국수의 비법을 알려주어 가업을 잇게 하고 싶지만, 포의 관심사는 오로지 '쿵푸 마스터'. 가게 일은 뒷전으로 하고 쿵푸의 비법이 적힌 용문서의 전수자를 정하는 '무적의 5인방' 대결을 보러 시합장을 찾은 포,
+<br>
+<br>
+<img src="../images/movie_image3.jpg" alt="쿵푸 팬더" width="800px" height="400px">
+<br>
+그런데 이게 웬일! 마을의 현인 우그웨이 대사부가 포를 용문서의 전수자로 점지하는 이변이 일어난다. 무적의 5인방은 물론 시푸 사부 역시 이 사태를 받아들이지 못하는 가운데, 용문서를 노리고 어둠의 감옥에서 탈출한 타이렁이 마을을 습격해오자 그를 막아야 하는 미션이 포에게 떨어지는데... 포는 쿵푸마스터로 거듭날 수 있을까? 아니... 포가 쿵푸를 할 수는 있을까? 똥배 안에 숨겨진 포스를 깨우기 위한 포의 도전이 시작된다!
+<br>
+
+<br>
+<h2>배우/제작진</h2>
+<br>
+<a href="#">Jack Black</a>팬더곰, 포 목소리 역
+<br>
+<img src="../images/jack.jpg" alt="jack" width="100px" height="200px">
+<br>
+<br>
+<li><a href="#">Jackie Chan</a></li>원숭이, 몽키 목소리 역
+<br>
+<img src="../images/jackie.jpg" alt="jackie" width="100px" height="200px">
+<br>
+<br>
+<li><a href="#">Angelina Jolie</a></li> 호랑이, 타이그리스 목소리 역
+<br>
+<img src="../images/angelina.jpg" alt="angelina" width="100px" height="200px">
+<br>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Form test</h1>
+<form method = "post" action="welecome.jsp">
+	color:<input type="color"><br>
+	date:<input type="date"><br>
+	email:<input type="email"><br>
+	range:<input type="range" min="1" max="10" step="1"><br>
+	url:<input type="url"><br>
+	search:<input type="search"><br>
+	number:<input type="number"><br>
+	
+	<textarea row="5" colos="30"></textarea>
+	<br>
+	<select name="Singer">
+		
+		<optgroup label="my singer">
+		<option value="1">iu</option>
+		<option value="2">red</option>
+		</optgroup>
+		<optgroup label = "drama">
+		<option value="1">my man</option>
+		<option value="2">skycastle</option>
+		
+		</optgroup>
+		
+	
+	</select>
+	<input type="submit" value="전송">
+	
+	
+
+</form>
+</body>
+</html>

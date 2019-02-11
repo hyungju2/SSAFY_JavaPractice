@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Become a Reamember</title>
+</head>
+<body>
+	<p align="center">
+		<font color="yellow">
+			<h1 align="center">My Information</h1>
+		</font>
+	<fieldset>
+		<legend>
+			<font color="green">Registration Information 
+		</legend>
+		<!-- Field set안에서 사용되며, 내용을 설명해줌. -->
+		<ul>
+			<li align="center"><label for="name">E-Mail:</label> <input
+				type="text" , id="id"></li>
+			<li align="center"><label for="password">Password:</label> <input
+				type="password" , id="password" autofocus required="required"
+				placeholder="패스워드를 입력해주세요"></li>
+			<li align="center"><label for="password">Verify
+					Password:</label> <input type="password" , id="password" autofocus
+				required="required" placeholder="패스워드를 입력해주세요"></li>
+		</ul>
+	</fieldset>
+
+	<br>
+	<fieldset>
+		<legend>
+			<font color="green">Member Information 
+		</legend>
+		<!-- Field set안에서 사용되며, 내용을 설명해줌. -->
+		<ul>
+			<li align="center"><label for="firstname">First Name:</label> <input
+				type="text" , id="id"></li>
+			<li align="center"><label for="Lastname">Last Name:</label> <input
+				type="password" , id="password"></li>
+			<li align="center"><label for="address">Address:</label> <input
+				type="text" , address="address"></li>
+			<li align="center"><label for="City">City:</label> <input
+				type="text" , city="city"></li>
+
+			<li align="center"><label for="State">State:</label> <input
+				type="text" , state="state" autofocus required="required"
+				placeholder="2 character code"></li>
+			<li align="center"><label for="State">Zipcode:</label> <input
+				type="text" , Zipcode="Zipcode" autofocus required="required"
+				placeholder="5 or 9 digit"></li>
+			<li align="center"><label for="PhoneNumber">PhoneNumber:</label>
+				<input type="text" , PhoneNumber="PhoneNumber" autofocus
+				required="required" placeholder="999-999-9999"></li>
+		</ul>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>
+			<font color="green">Membership Information <br> <br>
+				</legend>
+				Membership Type: <select> name="position">
+					<optgroup label="position">
+						<option value="1">Master</option>
+						<option value="2">Senior</option>
+						<option value="3">Junior</option>
+					</optgroup>
+			</select> <br> <label for="firstname">Starting Data:</label> <input
+				type="date" , id="id"> <br>
+				Tickets for Guests: <select> name="amount">
+					<optgroup label="amount">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</optgroup>
+		
+	</fieldset>
+	<br>
+	
+		<fieldset>
+	<legend>
+		<font color="green">Submit your info <br> <br>
+		</legend>
+		<input type="submit" value="Submit">
+		<input type="reset" value="FieldReset">
+
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table Tag</title>
+</head>
+<body>
+<!-- Table Tag -->
+<h1> Customer List</h1>
+
+	<table>
+		<tr>
+			<td>번호</td>
+			<td>이름</td>
+			<td>주소</td>
+		</tr>
+		
+		<tr>
+		<td>6</td>
+		<td>dlwlrma</td>
+		<td>Seoul</td>
+		</tr>
+
+		<tr>
+			<td>번호</td>
+			<td>이름</td>
+			<td>주소</td>
+		</tr>
+		
+		<tr>
+		<td>2</td>
+		<td>dahyun</td>
+		<td>incheon</td>
+		</tr>
+		
+		<tr>
+			<td>번호</td>
+			<td>이름</td>
+			<td>주소</td>
+		</tr>
+		
+		<tr>
+		<td>7</td>
+		<td>kim</td>
+		<td>Seoul</td>
+		</tr>
+
+
+	</table>
+</body>
+</html>

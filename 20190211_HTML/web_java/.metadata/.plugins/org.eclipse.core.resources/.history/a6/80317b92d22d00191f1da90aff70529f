@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>SSAFY 극장</title>
+</head>
+<body>
+<h1> SSAFY 극장</h1>
+	<header>
+		<nav>
+			<li><a href="#">영화</a></li>
+			<li><a href="#">극장</a></li>
+			<li><a href="#">예매</a></li>
+			<li><a href="#">이벤트</a></li>
+			<li><a href="#">상영영화소개.RSS</a></li>
+		</nav>
+	</header>
+<br>
+<h1> 무공해 힐링 시네마 </h1>
+<br>
+<p>무공해 힐링 시네마는 새로운 개념의 영화장르의 한가지를 말하는 것입니다. 지친 영혼을 위한 휴식을 주는 영화나 마음을 정화시키고 치유하는 힘을 가진 영화들...
+<br>
+<img src="../images/movie_image.jpg" alt="쿵푸 팬더" width="800px" height="400px">
+<br>
+<h1> 쿵 푸 팬 더</h1>
+<br>
+
+<tr>
+	<th> 개봉 </th>
+	<tr> 2011. 5. 26</tr>
+	
+
+</body>
+</html>

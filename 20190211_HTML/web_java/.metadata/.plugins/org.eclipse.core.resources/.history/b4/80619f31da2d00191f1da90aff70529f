@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Become a Reamember</title>
+</head>
+<body>
+	<p align="center">
+		<font color="yellow">
+			<h1 align="center">My Information</h1>
+		</font>
+	<fieldset>
+		<legend>
+			<font color="green">Registration I nformation 
+		</legend>
+		<!-- Field set안에서 사용되며, 내용을 설명해줌. -->
+		<ul>
+			<li align="center"><label for="name">E-Mail:</label> <input
+				type="text" , id="id"></li>
+			<li align="center"><label for="password">Password:</label> <input
+				type="password" , id="password" autofocus required="required"
+				placeholder="패스워드를 입력해주세요"></li>
+			<li align="center"><label for="password">Verify
+					Password:</label> <input type="password" , id="password" autofocus
+				required="required" placeholder="패스워드를 입력해주세요"></li>
+		</ul>
+	</fieldset>
+
+
+	<fieldset>
+		<legend>
+			<font color="green">Member Information 
+		</legend>
+		<!-- Field set안에서 사용되며, 내용을 설명해줌. -->
+		<ul>
+			<li align="center"><label for="firstname">First Name:</label> <input
+				type="text" , id="id"></li>
+			<li align="center"><label for="Lastname">Last Name:</label> <input
+				type="password" , id="password"></li>
+			<li align="center"><label for="address">Address:</label> <input
+				type="text" , address="address"></li>
+			<li align="center"><label for="City">City:</label> <input
+				type="text" , city="city"></li>
+
+			<li align="center"><label for="State">State:</label> <input
+				type="text" , state="state" autofocus required="required"
+				placeholder="2 character code"></li>
+			<li align="center"><label for="State">Zipcode:</label> <input
+				type="text" , Zipcode="Zipcode" autofocus required="required"
+				placeholder="5 or 9 digit"></li>
+			<li align="center"><label for="PhoneNumber">PhoneNumber:</label> <input
+				type="text" , PhoneNumber="PhoneNumber" autofocus required="required" placeholder="999-999-9999"></li>
+		</ul>
+	</fieldset>
+	
+	<fieldset>
+		<legend>
+			<font color="green">Membership Information 
+		</legend>
+		<!-- Field set안에서 사용되며, 내용을 설명해줌. -->
+		<ul>
+			<li align="center"><label for="name">E-Mail:</label> <input
+				type="text" , id="id"></li>
+			<li align="center"><label for="password">Password:</label> <input
+				type="password" , id="password" autofocus required="required"
+				placeholder="패스워드를 입력해주세요"></li>
+			<li align="center"><label for="password">Verify
+					Password:</label> <input type="password" , id="password" autofocus
+				required="required" placeholder="패스워드를 입력해주세요"></li>
+		</ul>
+	</fieldset>
+	
+
+</body>
+</html>

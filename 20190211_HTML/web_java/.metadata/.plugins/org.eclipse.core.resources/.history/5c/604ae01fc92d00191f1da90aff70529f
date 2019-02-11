@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>fieldset test</h1>
+	<form method="post" action="welecome.jsp">
+
+		<fieldset>
+			<legend> 개인정보</legend>
+			<ul>
+				<li><label for="name">이름</label> <input type="text" , id="name">
+				</li>
+				<li><label for="email">메일주소</label> <input type="text"
+					, id="email"></li>
+			</ul>
+		</fieldset>
+
+	</form>
+
+</body>
+</html>
