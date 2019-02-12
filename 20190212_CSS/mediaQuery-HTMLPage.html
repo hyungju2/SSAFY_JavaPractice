@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query Basic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 미디어쿼리: 문서를 실행하는 미디어(디바이스, 장치)에 따라 스타일 시트를 다르게 적용하는 기능. -->
+<style>
+@media screen { /*스크린으로 볼 떄*/
+	html {
+		height: 100%;
+		background: brown;
+	}
+	body {
+		color: white;
+		font-family: 궁서체;
+	}
+}
+
+@media print { /*출력해서 볼 떄*/
+	html {
+		text-align: right;
+		color: green;
+		font-family: tahoma;
+	}
+}
+
+</style>
+
+</head>
+<body>
+	<h1>Lorem ipsum</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+		sollicitudin, nulla a posuere convallis, magna ipsum semper leo, quis
+		bibendum velit massa ut tellus. Vestibulum laoreet dapibus quam non
+		adipiscing. Donec vehicula urna quis nisi suscipit a ultrices lacus
+		malesuada. Quisque mattis turpis a libero volutpat euismod a in massa.
+		Vestibulum sem lacus, volutpat et gravida a, placerat ac lacus. Nulla
+		facilisi. Cras placerat felis at risus iaculis eget sodales ipsum
+		consectetur. Donec at leo quam, non egestas quam. Donec magna libero,
+		pellentesque a ultricies ac, consectetur eu diam. Maecenas sit amet
+		justo nisl, sit amet fermentum felis. In laoreet, quam ac mollis
+		consequat, nisl ante mollis dui, id tempus felis libero nec dolor.
+		Proin lobortis rhoncus sem, vitae luctus neque scelerisque quis. Morbi
+		quis quam diam, quis condimentum libero. Quisque vel enim vel metus
+		sagittis mollis quis et arcu. Aliquam erat nulla, congue non imperdiet
+		sit amet, consectetur quis urna.</p>
+	<p>Aenean luctus congue scelerisque. Maecenas aliquet ante
+		elementum mauris porta vel tristique nisl euismod. Integer vel
+		tincidunt lectus. Cras id nisi tortor. Maecenas nec molestie dui.
+		Fusce in sapien elit, mattis convallis nisi. Mauris vel varius lacus.
+		Praesent sit amet mi velit. Sed eu erat lorem, vel varius lacus. Proin
+		pharetra augue eu ligula tempor eu sagittis ante condimentum.
+		Phasellus sed risus sem. Vestibulum sodales diam non massa iaculis eu
+		volutpat velit pellentesque. Pellentesque pharetra tincidunt metus sed
+		porta.</p>
+</body>
+</html>
+

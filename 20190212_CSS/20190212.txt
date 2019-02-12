@@ -1,0 +1,43 @@
+CSS의 목적
+-> HTML에 스타일을 부여. 문서의 외관을 보다 효과적으로 제어.
+하나의 문서에 여러 개의 스타일 시트 지정 가능.
+
+HTML 문서에서 CSS연결 방법
+1. link요소 사용하여 외부 스타일시트 연결.
+2. style요소와 @import사용하여 외부 스타일 시트와 연결
+3. stayle 요소를 사용하여 직접 스타일 지정(내부 스타일)
+4. body요소의 하위 요소에 'style' 속성을 사용하여 지정(inline) -> 굳이 권장하진 않음.
+중복된 요소가 있으면, 가장 가까운 요소부터 적용됨.  
+우선순위 1) inline 2)내부File 3) 외부 
+
+-> HTML과 별개로 CSS를 만들면, 원하는 HTML에 누구나 가져다가 쓸 수 있음.
+
+css를 할 때, id 속성은 중복이 되지 않아야 하기 때문에, 한 번밖에 사용할 수 없다.
+id속성이 중복 되어도, css에서는 아무 문제 없이 중복 사용이 되나, Javascript에서는 중복이 될 경우
+문제가 발생한다.
+
+
+
+1) internal
+2) test.css
+3) classId
+4) background
+5) font
+6) border
+padding은 안에 있는 간격임. 전체 간격을 넓히려면 margine을 사용.
+margine -> border -> padding -> contents
+7) list
+8)inline-inlineblock
+->display(none)은 아예 사라지는 것이나, visibility hidden은 자리는 존재.
+9)list menu
+10)menudog
+11)boxtest ->기본이 content-box임 / 크기가 달라질 수 있으니 유의
+12)float
+13)test
+14)layout-css
+15)static
+->기본 default는 static임. 블락 요소여서 한 줄씩 써짐.
+16)relative
+17)absolute
+18)media query 미디어쿼리: 문서를 실행하는 미디어(디바이스, 장치)에 따라 스타일 시트를 다르게 적용하는 기능.
+19)responsive

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Style Property Basic</title>
+<style>
+#box1 {
+	background-color: red;
+	width: 150px;
+	height: 300px;
+	margin: 30px;
+	display: inline;
+}
+
+#box2 {
+	background-color: red;
+	width: 150px;
+	height: 300px;
+	margin: 30px;
+	display: block;
+	/* inline-block을 하면, 배치는 inline으로 하나, 원래 갖고 있었던 블록의 성질을 다 표시함. */
+}
+</style>
+</head>
+<body>
+	<!-- <span style="display: none;">Dummy</span>-->
+	 <span>Dummy</span>
+	 <div id="box1"> 
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+	</div>
+	<span>Dummy</span>
+
+	<hr>
+	<span style="visibility: visible";>Dummy2</span>
+	<!--none은 아예 자리마저 없으나, hidden은 자리는 존재.  -->
+	<div id="box2">
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+	</div>
+	<span>Dummy2</span>
+</body>
+</html>

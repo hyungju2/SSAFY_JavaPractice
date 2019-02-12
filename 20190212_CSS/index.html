@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>SSAFY 극장</title>
+<style type="text/css">
+#container {
+	width: 960px; /*content 사이즈만 포함한 크기임.*/
+	padding: 20px; /*양쪽의 padding이 붙으므로, 전체 크기는 1000이다.*/
+	margin: 0 auto; /*auto는 화면 사이즈에 관계없이, 전체 콘텐츠를 중앙으로. width를 꼭 지정해야 함.*/
+	background-color: gray;
+}
+
+#sidebar {
+	width: 150;
+	padding: 0;
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+	background-color: black;
+}
+
+ul li {
+	position: relative;
+	left: -60px;
+	display: inline-block;
+	width: 142px;
+	height: 50px;
+	padding-left: 30px;
+	color: white;
+}
+
+.div1 {
+	float: left;
+	width: 400px;
+	height: 200px;
+	padding: 30px;
+	background-color: lime;
+	border-radius: 10px;
+	padding-bottom: 30px;
+}
+
+.div2 {
+	position: relative;
+	left: -140px;
+	float: left;
+	width: 400px;
+	height: 200px;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url("../images/movie_image.jpg");
+	padding-bottom: 30px;
+}
+
+.panda {
+	clear: both;
+	padding-top: 30px;
+}
+
+.gaebong {
+	padding-top: 30px;
+	width: 462px;
+	height: 200px;
+	font-style: italic;
+}
+
+.contents {
+	float: left;
+	padding-bottom: 10px;
+	width: 331px;
+	height: 300px;
+}
+
+.contents2 {
+	position: relative;
+	left: 20;
+	float: left;
+	padding-left: 150px; padding-bottom : 10px;
+	width: 331px;
+	height: 300px;
+	padding-bottom: 10px;
+}
+
+.color {
+	background-color: yellow;
+	width: 170px;
+}
+
+.pandaimg {
+	clear: both;
+	float: left; padding-top : 20;
+	background-image: url("../images/movie_image3.jpg");
+	width: 331px;
+	height: 300px;
+	padding-top: 20;
+}
+
+.pandamovie {
+	position: relative;
+	left: 20;
+	top: 50;
+	float: left;
+	padding-left: 50px;
+	padding-top:20;
+	padding-bottom: 50px;
+	width: 50px;
+	height: 250px;
+}
+
+.people {
+	float: left;
+	padding-top: 50px;
+	claer: both;
+	width: 500px;
+	margin:50px;
+}
+
+.foot{
+	padding-top: 30px;
+	clear: both;
+	padding-top: 50px;
+	width: 500px;
+}
+</style>
+
+</head>
+<body>
+	<div id="container">
+		<h1>SSAFY 극장</h1>
+
+		<nav>
+			<ul>
+				<li>영화</li>
+				<li>극장</li>
+				<li>예매</li>
+				<li>이벤트</li>
+				<li>상영영화소개</li>
+			</ul>
+		</nav>
+
+		<br> <br>
+		<div class="div1">
+			<h2>무공해 힐링 시네마</h2>
+			<br>
+			<p>무공해 힐링 시네마는 새로운 개념의 영화장르의 한가지를 말하는 것입니다. 지친 영혼을 위한 휴식을 주는 영화나
+				마음을 정화시키고 치유하는 힘을 가진 영화들...
+		</div>
+		<div class="div2"></div>
+		<br> <br> <br> <br>
+
+		<h1 class="panda">쿵 푸 팬 더</h1>
+		<br>
+
+		<div class="gaebong">
+			<h3 style="display: inline">
+				개 봉
+				</h2>
+				2011. 5. 26 <br>
+				<h3 style="display: inline">
+					감 독
+					</h2>
+					<a> 여 인 영</a> <br>
+					<h3 style="display: inline">
+						등 급
+						</h2>
+						[국내] 전체 관람가<br>
+		</div>
+		<br>
+		<div class="contents">
+			<p class="color">하.면.된.다 - 포.스.작.렬</p>
+			'평화의 계곡'에서 아버지의 국수 가게를 돕고 있는 팬더, 포. 아버지는 국수의 비법을 알려주어 가업을 잇게 하고 싶지만,
+			포의 관심사는 오로지 '쿵푸 마스터'. 가게 일은 뒷전으로 하고 쿵푸의 비법이 적힌 용문서의 전수자를 정하는 '무적의
+			5인방' 대결을 보러 시합장을 찾은 포,
+		</div>
+		<div class="contents2">그런데 이게 웬일! 마을의 현인 우그웨이 대사부가 포를 용문서의 전수자로
+			점지하는 이변이 일어난다. 무적의 5인방은 물론 시푸 사부 역시 이 사태를 받아들이지 못하는 가운데, 용문서를 노리고 어둠의
+			감옥에서 탈출한 타이렁이 마을을 습격해오자 그를 막아야 하는 미션이 포에게 떨어지는데... 포는 쿵푸마스터로 거듭날 수
+			있을까? 아니... 포가 쿵푸를 할 수는 있을까? 똥배 안에 숨겨진 포스를 깨우기 위한 포의 도전이 시작된다!</div>
+
+		<div class="pandaimg"></div>
+		<div class="pandamovie"><video controls="controls">
+	<source
+	src="../images/KungFuPanda_Sample.mp4"
+	/>
+	</video></div>
+
+
+		<nav></nav>
+			<h2>Movies</h2>
+			<li><a href="#">현재상영작</a></li>
+			<li><a href="#">상영예정작</a></li>
+			<li><a href="#">영화뉴스</a></li>
+			<li><a href="#">테마뉴스</a></li>
+			<li><a href="#">맥스무비 예매 순위</a></li>
+		</nav>
+		
+		<br> <br>
+		
+		<div class="people">
+			<h2>배우/제작진</h2>
+			<br> <a href="#"> Jack Black</a> 팬더곰, 포 목소리 역 <br> <img
+				src="../images/jack.jpg" alt="jack" width="100px" height="150px">
+			<br> <br> <a href="#">Jackie Chan</a> 원숭이, 몽키 목소리 역 <br>
+			<img src="../images/jackie.jpg" alt="jackie" width="100px"
+				height="150px"> <br> <br> <a href="#">Angelina
+				Jolie</a> 호랑이, 타이그리스 목소리 역 <br> <img src="../images/angelina.jpg"
+				alt="angelina" width="100px" height="150px"> <br>
+				<br>
+		</div>
+	
+
+		<div class="foot">
+
+
+		<nav>
+			<ul>
+				<li><h2>About</h2>
+				<br>서울 강남 역삼 멀티캠퍼스<br>
+				<a href="#">ssafy@ssafy.com</a>
+				</li>
+				
+				<li><h2>개인정보 취급 방침</h2>
+				<br><a href="#">개요</a><br>
+				<a href="#">문의처</a>
+				</li>
+				
+				<li><h2>공지사항</h2>
+				<br><a href="#">오시는 길</a><br>
+				<a href="#">오류시 문의사항</a>
+				</li>				
+				
+			</ul>
+		</nav>
+
+
+	</div>
+
+
+	
+</body>
+</html>

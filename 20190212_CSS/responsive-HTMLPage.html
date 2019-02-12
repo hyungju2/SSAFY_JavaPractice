@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<!--반응형 웹: 미디어 쿼리 기능 + 장치의 크기, 비율등도 구분해서 css 적용하는 기능.-->
+  	<style type="text/css">
+  	 @media screen and (max-width: 767px) { /*0-767 pixel*/
+            html {
+                background: red;
+                color: white; 
+                font-weight: bold;
+            }
+        }
+        
+ 		/*768-979 pixel, ipad가 수직일때 768*/
+        @media screen and (min-width: 768px) and (max-width: 959px) {
+        	
+        	 html {
+                background: aqua;
+                color: white; 
+                font-weight: bold;
+            }
+        
+        }
+        
+  		/*980- pixel, 일반 브라우져 페이지 너비*/
+        @media screen and (min-width: 960px) {
+             html {
+                background: fuchsia;
+                color: white; 
+                font-weight: bold;
+            }
+        }
+  	</style>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Aenean luctus congue scelerisque. Maecenas aliquet ante.</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<!-- <link rel="stylesheet" type="text/css"  -->
+
+<!--내부파일 형식-->
+<style type="text/css">
+@import url("text.css"); /*우선순위: inline > 내부 > 외부*/
+/*외부 파일 import*/
+h1 {
+	color: blue; /*글자 색 지정*/
+	font-family: "맑은 고딕"; /*글자체*/
+	font-size: : 30pt; /*글자 크기*/
+	font-style: italic; /*기울기*/
+}
+
+h2 {
+	color: rgb(0, 255, 0);
+}
+
+h3 {
+	color: cyan;
+}
+</style>
+<body>
+	<h1>글자</h1>
+	<h2 style="color: red;">this is h2 tag</h2>
+	<!-- 속성을 넣어줌. 속성의 끝에는 세미콜론, 내부 파일보다 inline이 우선순위가 높음 -->
+	<h2>this is h2 tag</h2>
+	<h2>this is h2 tag</h2>
+	<h3>this is h3 tag</h3>
+
+</body>
+</html>
