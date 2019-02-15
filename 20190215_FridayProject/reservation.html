@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>영화 예매</title>
+
+<style>
+nav {
+	width: 520px;
+}
+ul{
+margine: 0px;
+padding: 0px;
+float:left;
+}
+ul li {
+float:left;
+	display: none;
+}
+
+label: hover ul li{
+	display: block;
+}
+
+.slash{
+	text-decoration: line-through;
+}
+
+</style>
+
+</head>
+<body>
+	<header>
+		<h1>영화 예매</h1>
+	</header>
+
+	<h2>쿵푸팬더</h2>
+	<a href="First.html"> <img src="../images/movie_image.jpg"
+		width="300px" height="400px">
+	</a>
+
+	<div>
+		상영관<select name="상영관">
+			<optgroup label="상영관">
+				<option value="1">CGV</option>
+				<option value="2">LotteCinema</option>
+				<option value="3">MegaBox</option>
+			</optgroup>
+		</select> 날짜선택<input type="date" ,date=date>
+	</div>
+
+	<nav>
+		<fieldset>
+			<legend> 시간선택 </legend>
+			
+			<label><input type="radio">08:30
+			</label> 
+				<label><input type="radio" value="11:00">11:00
+				 </label>
+				<label><input type="radio">14:20
+				 </label>
+				<label><input type="radio">17:25
+				 </label>
+				 <label><input type="radio">20:10
+				 </label>
+				<label><input type="radio">23:05
+				 </label>
+		</fieldset>
+	</nav>
+	<br>
+	<div>
+	요금 <a class="slash">\9,000</a> <a>\5,000</a>
+	</div>	
+	
+	<br>
+	<div>
+	인원 <input id="name" type="text" placeholder="0">
+	</div>
+	<br>
+	<div>
+	
+	금액 <input type="text", placeholder="0">
+	</div>
+	<br>
+	<div>
+	<label><input type="checkbox">옵션
+				 </label>
+	</div>
+	
+	<br>
+	<nav>
+		<fieldset>
+			<legend></legend>
+			<label><input type="checkbox">팝콘
+				 </label>
+				 <label><input type="checkbox">콜라
+				 </label>
+		</fieldset>
+	</nav>
+</body>
+
+
+
+
+</html>
