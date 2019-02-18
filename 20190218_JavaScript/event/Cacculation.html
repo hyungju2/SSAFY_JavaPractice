@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        width: 500px;
+		height: 500px;
+		border: 2px solid blue;
+    </style>
+    
+    <script type="text/javascript">
+       
+        function renew(item){
+            var data=document.getElementById('data');
+           
+            if(item=='clear'){
+                data.value ='';
+            }
+            else if(item == 'sqrt'){
+                data.value=Math.sqrt(data.value);
+            }
+            else if(item == '='){
+                data.value=eval(data.value);
+            }
+            else data.value+=item;
+        }
+    
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <h2>계산기</h2>
+        
+        <tr>
+            <td colspan="3">
+                <input type="text" id="data" name="data2" placeholder = "0.0">
+            </td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" value="1" onclick="renew(1);"></td>
+            <td><input type="button" value="2" onclick="renew(2);"></td>
+            <td><input type="button" value="3" onclick="renew(3);"></td>
+            <td><input type="button" value="+" onclick="renew('+');"></td>
+        </tr>
+        
+        <tr>
+                <td><input type="button" value="4" onclick="renew(4);"></td>
+                <td><input type="button" value="5" onclick="renew(5);"></td>
+                <td><input type="button" value="6" onclick="renew(6);"></td>
+                <td><input type="button" value="-" onclick="renew('-');"></td>    
+        </tr>
+        
+        <tr>
+                <td><input type="button" value="7" onclick="renew(7);"></td>
+                <td><input type="button" value="8" onclick="renew(8);"></td>
+                <td><input type="button" value="9" onclick="renew(9);"></td>
+                <td><input type="button" value="*" onclick="renew('*');"></td>
+        </tr>
+        
+        <tr>
+                <td><input type="button" value="0" onclick="renew(0);"></td>
+                <td><input type="button" value="clear" onclick="renew('clear');"></td>
+               	<td><input type="button" value="=" onclick="renew('=');"></td>
+               	<td><input type="button" value="/" onclick="renew('/');"></td>
+               	 
+            
+        </tr>
+        
+    </table>
+    
+</body>
+</html>
+

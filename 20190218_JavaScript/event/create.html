@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#result {
+	width: 500px;
+	height: 500px;
+	border: 2px solid blue;
+	overflow: auto; /*div안의 내용물이 넘치면 자동으로 스크롤바가 생기도록 지정.*/
+}
+</style>
+<script type="text/javascript">
+	function del(that) {
+		var parent = that.parentNode;
+		parent.removeChild(that);
+	}
+
+	var cnt = 0;
+	function create() {
+
+		var h1 = document.createElement("h1");
+		h1.setAttribute('onclick', 'del(this)');
+		var txt = document.createTextNode("hello-" + ++cnt);
+		h1.appendChild(txt);
+
+		var result = document.getElementById("result"); //div 찾아냄
+		result.appendChild(h1);
+
+		//<h1>hello</h1>를 생성한 후 div안에 붙이기
+		/*var h1 = document.createElement("h1"); //h1 엘리먼트 생성. 
+	
+		var txt = document.createTextNode("hello-"+ ++cnt); 
+		h1.appendChild(txt); //<h1>hello-1</h1>의 효과
+		
+		var result = document.getElementById("result"); //div를 찾아냄.
+		result.appendChild(h1); */
+
+	}
+</script>
+</head>
+<body>
+	<h1>Dom Create</h1>
+	<input type="button" value="create" onclick="create()">
+	<hr>
+	<div id="result"></div>
+
+</body>
+</html>

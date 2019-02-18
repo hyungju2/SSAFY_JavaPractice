@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	//id, pass 칸에 값이 입력되어있는지 체크하고 화면을 폼 전송
+	function check() {
+		//1. id, pass칸의 값을 알아오기
+		var id = document.getElementById("id").value;  //값을 최종적으로 알아내려면, value 키워드를 사용해야 함.
+		var pass = document.getElementById("pass").value;
+		
+		if(id!=""&&pass!=""){
+		alert(id+"님 환영합니다");
+		alert(pass);
+		}
+		else{
+			alert("Id와 Password를 입력해주세요");
+			return;
+		}
+		var f = document.getElementById("f");
+		f.action ="other.html";
+		f.method = "get";
+		f.submit(); //전송
+	}
+	
+</script>
+
+</head>
+<body>
+	<h1>Login</h1>
+	<form method="post" action="welcome.html" id="f">
+		ID:<input type="text" name="id" id="id"><br> PASS:<input
+			type="password" name="pass" id="pass"><br>
+			<input type="button" value="check" onclick="check()"><br>
+			 <input
+			type="button" value="로그인" onclick="check()">
+	</form>
+</body>
+</html>

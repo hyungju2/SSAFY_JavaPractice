@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//사건 발생시 처리 할 내용
+
+	function test() {
+		alert("Click");
+	}
+
+	function process(code) {
+		if (code == 1) {
+			open("http://www.naver.com", "",
+					"width=300px height-500px scrollbars=yes");
+		} else if (code == 2) {
+			print();
+		} else {
+			close();
+		}
+	}
+</script>
+</head>
+<body>
+	<!-- 사건이 발생하는 대상에게 이벤트 핸들러 등록 -->
+	<input type="button" value="click" onclick="test()">
+	<input type="button" value="mouseOver" onmouseover="alert('gogo')">
+	<input type="button" value="open" onclick="process(1)">
+	<input type="button" value="print" onclick="process(2)">
+	<input type="button" value="close" onclick="process(3)">
+	<hr>
+	<input type="radio" onclick="alert('동의하세요.')">약관에 동의하지 않습니다.
+	<input type="radio">
+
+</body>
+</html>

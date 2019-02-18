@@ -1,0 +1,28 @@
+HTML ( Contents) CSS (Style) JS/JQuery (Programming)
+
+DOM -> Document Object Model
+
+JavaScript 개요 : 정적인 HTML 문서에 동적인 기능을 부여하기 위해 사용하는 스크립트 언어.
+->동적 : 실행할 때마다 동작이 달라질 수 있다는 것을 의미.
+
+외부 자바스크립트 파일을 HTML에 적용시
+<script language="스크립트 언어 이름" src="외부 파일url">
+-> 재활용성이 높다.
+
+HTML 내부에서의 자바 스크립트
+<script type = "text/javascript"?>
+
+JavaScript는 변수를 적을 때, 변수의 타입을 명시적으로 구분하지 않음.
+대신, 변수의 타입이란 것을 알기 위해 var를 적어둠.
+
+전역변수 -> 함수 외부에서 선언, 내부에서 선언시에는 var 키워드 없이 선언
+지역변수 -> 함수 내에서 var키워드를 이용하여 선언
+ex) global = "지역변수" / var temp = "전역변수"
+
+
+2. DOM
+->Document Object Model
+HTML, XML 문서를 표현하고 조작하는 표준적인 방법.
+노드로 구성되어있음. 
+childNodes : 모든 자식 노드 전체
+Sibling : 노드와 노드 사이의 관계

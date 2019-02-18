@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	h1 {
+		color: blue;		
+	}
+	</style>
+	
+	<!-- 외부 스크립트 파일 형식 -->
+	<script type="text/javascript" src="../js/out.js">
+	
+	</script>
+	
+	<!-- 내부 스크립트 파일 형식 : html문서 안에 스크립트 내용이 함께 나옴 -->
+	<script type="text/javascript">
+	//스크립트 안에서 주석을 할때는 '/'를 이용
+	/*
+		설명이 필요한 부분의 여러줄 주석에는 이와같이 사용하면 된다.
+	*/
+	
+	var num = 12;
+	var name = "Kane";
+	var flag = true;
+	score = 4; //지역변수
+	
+	//출력 : 브라우저에 출력
+	document.write(num + "<br>"); //줄 바꿈을 위해 태그를 추가함.
+	document.write(name+ "<br>");
+	document.write(flag+ "<br>");
+	document.write(score+ "<br>");
+	
+	console.log(typeof(num)+ "<br>");
+	console.log(typeof(name)+ "<br>");
+	console.log(typeof(flag)+ "<br>");
+	
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

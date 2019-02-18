@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function process(that) {
+	//눌려진 링크의 내용을 읽어와서 alert로 표시하기.
+	var id = that.id;
+	var val1 = id.substring(0,5); //처음부터 5보다 작은 것 까지
+	var val2 = id.substring(5); //5부터 시작. 하나만 넣으면, 끝까지 감.
+	
+	alert(val2+"시 "+val1)
+	
+	var value1 = opener.document.getElementById('value1');
+	var value2 = opener.document.getElementById('value2');
+	
+	value1.value = val1; //값을 집어 넣는데도 이용.
+	value2.value = val2;
+	
+	close();
+	}
+</script>
+
+</head>
+<body>
+	<h1>Find data</h1>
+	<a href="#" id="12345서울" onclick="process(this)">12345 서울</a>
+	<br>
+	<a href="#" id="13435인천" onclick="process(this)">12345 인천</a>
+	<br>
+	<a href="#" id="15375경기" onclick="process(this)">12345 경기</a>
+	<br>
+
+</body>
+</html>

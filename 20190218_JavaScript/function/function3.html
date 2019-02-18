@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* 자바스크립트에서는 함수도 하나의 데이터 타입으로 인식됨.
+ * --> 다른 함수의 파라메터나 리턴값으로 사용 가능.
+ */
+function go(){
+	 document.write("hello<br>");
+ }
+ 
+ var stop = function(){
+	 document.write("bye<br>");
+ }
+ 
+ //함수가 파라메터로 전달됨. callback 함수
+ function sometest(some){
+	 some();
+ }
+
+ sometest(go);
+ sometest(stop);
+ 
+ //return 값으로도 함수 사용 가능.
+ function test(){
+	 return function(){
+		 document.write("gogo<br");
+	 }
+ }
+ 
+ //함수 사용
+ var result = test();
+ result();
+ 
+ test()(); //function도 하나의 데이터로 인식함.
+</script>
+</head>
+<body>
+
+</body>
+</html>

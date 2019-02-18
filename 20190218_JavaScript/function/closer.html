@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//closure: 사용범위가 끝난 데이터를 범위 바깥에서도 계속해서 사용할 수 있도록 해주는 기능.
+//closure --> num or 리턴되는 함수 자체를 지칭하기도 함. 
+	function test(){
+		var num =99;
+		return function(){
+			document.write(num);
+		}
+	}
+
+	test()();
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

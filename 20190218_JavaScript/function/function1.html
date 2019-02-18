@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//1.선언적 함수: 이름이 있는 함수
+	function test() {
+		alert("hello, function!!!")
+	}
+
+	function add(x, y) {
+		alert(x + y);
+	}
+	
+	function multi(a, b){
+		return a*b;
+	}
+	
+	function max(a,b){
+		return a>b?a:b;
+	}
+	
+	function hello(name){
+		return name+"hello";
+	}
+	
+	function loopString(msg, count){
+		 cnt = count;
+		for( i=0; i<cnt; i++){
+		document.write(msg);
+		}
+	}
+	
+	//2. 함수의 사용
+
+	//test()
+	//add(3, 5);
+	//alert(multi(3,5));
+	var j = "hello";
+	//loopString(j,5);
+	//alert(hello(j));
+	alert(max(3,5));
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
