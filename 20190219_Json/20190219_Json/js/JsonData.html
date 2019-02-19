@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- javascript에서 사용하는 객체 표현 방식 : json(javascript object notation) 
+ key:value 형식으로 표현 
+-->
+<script type="text/javascript">
+	var user = {
+			name: 'Pogba',
+			address: 'Manchester',
+			tel:'010-2345-2345'
+	};
+	
+	
+	document.write(user.name+ "<br>");
+	document.write(user.address+ "<br>");
+	document.write(user.tel+ "<br><hr>");
+	
+	for(var key in user){
+	document.write(key + ":" + user[key]+ "<br>");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

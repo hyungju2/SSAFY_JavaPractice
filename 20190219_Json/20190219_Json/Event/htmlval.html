@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//text(), html(), val(): Getter/Setter 기능을 동시에 수행
+		$('#b1').click(function(){
+			$('#p1').text('<h1>hello paragraph</h1>'); //선택한 대상의 텍스트를 setting하는 작업. 태그 적용x
+		});
+		$('#b2').click(function(){
+			$('#p1').html('<h1>hello paragraph</h1>'); //선택한 대상의 텍스트를 setting. 태그 적용o
+		});
+		$('#b3').click(function(){
+			$('#message').val('Dolly Duck!!'); //setting 입력이 가능한 태그에 값을 setting할 때, val();
+		});
+		$('#b4').click(function(){
+			var msg = $('#p1').text() + '\n' //괄호 안을 비워두면 Getter, 괄호에 값이 있으면 Setter로 동작함.
+					+$('#p2').html()+ '\n'
+					+$('#message').val();
+			alert(msg);
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<button id="b1">set text</button>
+	<button id="b2">set html</button>
+	<button id="b3">set value</button>
+	<button id="b4">get value</button>
+	<br>
+	<p id="p1">this is orange paragraph</p>
+	<p id="p2">this is yellow paragraph</p>
+	<input type="text" id="message" value="mickey">
+
+</body>
+</html>

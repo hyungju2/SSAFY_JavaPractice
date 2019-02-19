@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(':button:first').click(function(){
+			//server로 ajax 요청 보내기.
+			$.ajax({
+				url:'Sample.jsp',
+				success: function(result, status, xhr){//서버로부터 결과가 성공적이라면
+					$('#result').val(result);
+				},
+				error: function(xhr, status, error){//서버로부터 결과가 실패라면
+					$("#result").val(error+"--"+status);
+				}
+			});
+			
+		});
+	});
+</script>
+</head>
+<body>
+<h1>ajax test</h1>
+<input type="button" value="get data" >
+<input type="button" value="post data"> 
+<hr>
+<textarea rows="5" cols="80" id="result">
+
+</textarea>
+</body>
+</html>

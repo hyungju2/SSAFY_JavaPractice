@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	var xhr = null;
+	
+	//ajax 통신에 필요한 XHR 객체 생성
+	function getXHR(){
+		xhr = new XMLHttpRequest();
+	}
+	
+	//server에 ajax 요청
+	function getData(){
+		getXHR();
+		xhr.open('get','Sample.jsp',true); //요청 준비, true는 비동기 방식 요청.
+		xhr.onreadystatechange = callback; //readystate 값이 바뀔때마다 호출할 콜백 함수 지정
+		xhr.send(null); //요청
+		
+	}
+	
+	function postData(){
+		getXHR();
+		xhr.open('post','Sample.jsp',true); //요청 준비, true는 비동기 방식 요청.
+		xhr.onreadystatechange = callback; //readystate 값이 바뀔때마다 호출할 콜백 함수 지정
+		xhr.send(); //요청이 get방식과 다르게 비어있음. 널이 아님! 
+	}
+	
+	//응답 도착 후 처리함수.
+	function callback(){
+		var result = document.getElementById('result');
+		if(xhr.readyState == 4 && xhr.status == 200){ //status가 200이면 정상적인 응답. ReadyState가 4이면 모두 서버에 응답 완료
+			result.value = xhr.responseText; //text타입으로 데이터를 받겠다. 서버로부터 응답된 문자열 데이터
+		}
+	}
+</script>
+
+
+</head>
+<body>
+<h1>ajax test</h1>
+<input type="button" value="get data" onclick="getData()">
+<input type="button" value="post data" onclick="postData()"> 
+<hr>
+<textarea rows="5" cols="80" id="result">
+
+</textarea>
+</body>
+</html>

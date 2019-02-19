@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+#result {
+	width: 500px;
+	height: 200px;
+	border: 2px solid aqua;
+	overflow: auto;
+	color: blue;
+}
+</style>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#start').click(function(){
+			var lotto = new Array(6);
+			for (var i = 0; i < 6; i++) {
+				var j = parseInt(Math.random() * 45);
+				lotto[i] = j;
+			}
+			lotto.sort(function(left, right) {
+				return Number(left) - Number(right);
+			});
+			for (var i = 0; i < 6; i++) {
+				var a = document.createElement("a");
+				var txt = document.createTextNode(lotto[i] + 1);
+				wait(100);
+				var txt2 = document.createTextNode(" ");
+				a.appendChild(txt);
+				a.appendChild(txt2);
+				var result = document.getElementById("result");			
+				result.appendChild(a);
+			}
+		})
+	})
+	
+	function wait(msecs)
+	{
+	var start = new Date().getTime();
+	var cur = start;
+	while(cur - start < msecs)
+	{
+	cur = new Date().getTime();
+	}
+	} 
+</script>
+
+</head>
+<body>
+	<h2>대박을 기원합니다~~~</h2>
+	<div id="result"></div>
+	<td><input type="button" value="추첨" id="start"></td>
+</body>
+</html>

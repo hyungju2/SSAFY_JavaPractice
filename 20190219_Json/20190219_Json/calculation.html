@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+#result {
+	width: 300px;
+	height: 300px;
+	border: 2px solid blue;
+	overflow: auto;
+}
+</style>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var cnt = 1;
+	var data = document.getElementById('data');
+	$(document).ready(function() {
+		$('#1').click(function() {
+			renew(1);
+		});
+		$('#2').click(function() {
+			renew(2);
+		});
+		$('#3').click(function() {
+			renew(3);
+		});
+		$('#4').click(function() {
+			renew(4);
+		});
+		$('#5').click(function() {
+			renew(5);
+		});
+		$('#6').click(function() {
+			renew(6);
+		});
+		$('#7').click(function() {
+			renew(7);
+		});
+		$('#8').click(function() {
+			renew(8);
+		});
+		$('#9').click(function() {
+			renew(9);
+		});
+		$('#0').click(function() {
+			renew(0);
+		});
+		$('#mul').click(function() {
+			renew('*');
+		});
+		$('#div').click(function() {
+			renew('/');
+		});
+		$('#plu').click(function() {
+			renew('+');
+		});
+		$('#equ').click(function() {
+			renew('=');
+			
+
+		});
+		$('#clear').click(function() {
+			renew('clear');
+		});
+	});
+
+	
+	function renew(item) {
+		var data = document.getElementById('data');
+		if (item == 'clear') {
+			data.value = '';
+		} else if (item == 'sqrt') {
+			data.value = Math.sqrt(data.value);
+		} else if (item == '=') {
+			data.value = eval(data.value);
+			var h1 = document.createElement("h1");
+			var txt = document.createTextNode(cnt++ + " " + eval(data.value));
+			h1.appendChild(txt);
+			var result = document.getElementById("result");
+			result.appendChild(h1);
+		} else
+			data.value += item;
+		}
+</script>
+<title>Document</title>
+</head>
+<body>
+	<table border="1">
+		<h2>계산기</h2>
+
+		<tr>
+			<td colspan="3"><input type="text" id="data" name="data2"
+				placeholder="0.0"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="1" id="1"></td>
+			<td><input type="button" value="2" id="2"></td>
+			<td><input type="button" value="3" id="3"></td>
+			<td><input type="button" value="+" id="plu"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="4" id="4"></td>
+			<td><input type="button" value="5" id="5"></td>
+			<td><input type="button" value="6" id="6"></td>
+			<td><input type="button" value="-" id="min"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="7" id="7"></td>
+			<td><input type="button" value="8" id="8"></td>
+			<td><input type="button" value="9" id="9"></td>
+			<td><input type="button" value="*"
+				id="*mul></td>
+		</tr>
+
+		<tr>
+			<td><input type="
+				button" value="0" id="0"></td>
+			<td><input type="button" value="clear" id="clear"></td>
+			<td><input type="button" value="=" id="equ"></td>
+			<td><input type="button" value="/" id="div"></td>
+		</tr>
+
+	</table>
+	<br>
+	<h2>결과 목록</h2>
+	<div id="result"></div>
+</body>
+</html>
+

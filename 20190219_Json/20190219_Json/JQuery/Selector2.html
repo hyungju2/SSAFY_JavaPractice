@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(":text").val('hello'); //selector
+		$(":password").css('border','3px solid red').css('background-color','green');
+		//css가 연달아 이어져있는 것을 메소드 체이닝이라고 부름.
+		$(":button").css('background-color', 'lime');
+		$(":file").css('border','2px solid pink');
+		$("[href]").css('text-decoration', 'none').css('color', 'red');
+		
+		$('ul li').css('color','yellow');
+		$('div ul li').css('color','green');
+	});
+</script>
+
+
+</head>
+<body>
+	<input type="text"><br>
+	<input type="password"><br>
+	<input type="button" value="hello"><br>
+	<input type="file"><br>
+	<a href="#">gogo</a>
+	<hr>
+	
+	<div>
+		<ul>
+			<li>seattle</li>
+			<li>jeju</li>
+			<li>Seoul</li>
+		</ul>
+	</div>
+	
+	<ul>
+		<li>coffee</li>
+		<li>juice</li>
+		<li>milk</li>
+		<li>water</li>
+	</ul>
+	
+</body>
+</html>

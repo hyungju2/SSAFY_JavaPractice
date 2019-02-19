@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('button:first').click(function(){
+			//jquery에서 Element 생성.
+			var v1 = $('<h1>hello</h1>'); //h1 element 생성.
+			$('#here').append(v1);
+			
+			var img = $('<img/>');
+			img.attr('src','../images/bg.png');
+			
+			img.appendTo('#there');
+			
+			var img2 = $('<img/>',{
+				src:'../images/bo.PNG',
+				width:'200px',
+				height:'300px'
+			});
+			
+			img2.appendTo("#here");
+		
+		});
+	})
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<button>create</button>
+	<div id="here"></div>
+	<div id="there"></div>
+</body>
+</html>

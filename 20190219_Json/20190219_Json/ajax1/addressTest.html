@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+var xhr = null;
+
+//ajax 통신에 필요한 XHR 객체 생성
+function getXHR(){
+	xhr = new XMLHttpRequest();
+}
+
+//server에 ajax 요청
+function getAddress(){
+	getXHR();
+	var id = document.getElementById("name");
+	var params="?name="+id.value; //'?'로 시작하면 클라이언트에서 보낸다는 것으로 인식.
+			//규칙 : "?data="+값으로 보냄. 띄어쓰기 하면 안됨. 데이터 간 구분을 위해 '&'이용
+			//ex:?id=tommy&pass=123
+	xhr.open('get','addressTest.jsp'+params,true); //요청 준비, true는 비동기 방식 요청. params로 만들어 보냄
+	xhr.onreadystatechange = callback; //readystate 값이 바뀔때마다 호출할 콜백 함수 지정
+	xhr.send(null); //요청
+}
+
+//응답 도착 후 처리함수.
+function callback(){
+	var result = document.getElementById("address");
+	if(xhr.readyState == 4 && xhr.status == 200){ //status가 200이면 정상적인 응답. ReadyState가 4이면 모두 서버에 응답 완료
+	//div에 내용을 넣을 때는 value x, innerHTML로 넣어야 함.
+	
+	result.value = xhr.responseText;
+
+	}
+}
+</script>
+
+</head>
+<body>
+<h1>Ajax param text</h1>
+이름: <input type="text" id="name" onblur="getAddress()"><br>
+주소: <input type="text" id="address"><br>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+var xhr = null;
+
+//ajax 통신에 필요한 XHR 객체 생성
+function getXHR(){
+	xhr = new XMLHttpRequest();
+}
+
+//server에 ajax 요청
+function processGet(){
+	getXHR();
+	var id = document.getElementById("id");
+	var pass = document.getElementById("pass");
+	var params="?id="+id.value+"&pass="+pass.value; //'?'로 시작하면 클라이언트에서 보낸다는 것으로 인식.
+			//규칙 : "?data="+값으로 보냄. 띄어쓰기 하면 안됨. 데이터 간 구분을 위해 '&'이용
+			//ex:?id=tommy&pass=123
+	xhr.open('get','parameterProcess.jsp'+params,true); //요청 준비, true는 비동기 방식 요청. params로 만들어 보냄
+	xhr.onreadystatechange = callback; //readystate 값이 바뀔때마다 호출할 콜백 함수 지정
+	xhr.send(null); //요청
+}
+function processPost(){
+	getXHR();
+	var id = document.getElementById("id");
+	var pass = document.getElementById("pass");
+	var params="id="+id.value+"&pass="+pass.value; //'?'로 시작하면 클라이언트에서 보낸다는 것으로 인식.
+			//규칙 : "?data="+값으로 보냄. 띄어쓰기 하면 안됨. 데이터 간 구분을 위해 '&'이용
+			//ex:?id=tommy&pass=123
+	xhr.open('post','parameterProcess.jsp',true); //요청 준비, true는 비동기 방식 요청. params로 만들어 보냄
+	//post방식으로 파라메터 전송할 때 header setting 해줘야 함.	
+	xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+	xhr.onreadystatechange = callback; //readystate 값이 바뀔때마다 호출할 콜백 함수 지정
+	xhr.send(params); //요청
+}
+
+//응답 도착 후 처리함수.
+function callback(){
+	var result = document.getElementById("result");
+	if(xhr.readyState == 4 && xhr.status == 200){ //status가 200이면 정상적인 응답. ReadyState가 4이면 모두 서버에 응답 완료
+	//div에 내용을 넣을 때는 value x, innerHTML로 넣어야 함.
+	result.innerHTML = "<h1>"+xhr.responseText+"</h1>"; //html이기에 태그 사용 가능.
+	id.value= "";
+	pass.value = "";
+	}
+}
+
+</script>
+</head>
+
+<body>
+<h1>ajax parameter test</h1>
+
+id:<input type="text" id="id"><br>
+pass:<input type="password" id="pass"></br>
+<input type="button" value="processGet" onclick="processGet()">
+<input type="button" value="processPost" onclick="processPost()">
+<div id="result">
+</div>
+</body>
+</html>

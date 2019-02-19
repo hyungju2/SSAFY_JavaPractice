@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(':button:first').click(function(){
+			$.ajax({
+				url:'parameterProcess.jsp',
+				success:function(reulst){//call back 함수
+					$('div').html('<h1>'+result+'</h1>');
+				},
+				data:{
+					id: $('#id').val(),
+					pass: $('#pass').val()
+				}//서버로 보낼 데이터
+			})
+		});
+	});
+
+</script>
+</head>
+
+<body>
+	<h1>ajax parameter test</h1>
+	id:
+	<input type="text" id="id">
+	<br> pass:
+	<input type="password" id="pass">
+	</br>
+	<input type="button" value="processGet">
+	<input type="button" value="processPost">
+	<div id="result"></div>
+</body>
+</html>

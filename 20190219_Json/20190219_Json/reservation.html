@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>영화 예매</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#opt').hide();
+	
+	
+	$('#sale').click(function(){
+		var price = document.getElementById("people");
+		var ret = price.value * 5000;
+		$('#price').val(ret);
+		
+		
+		$('#jojo').css('text-decoration','none');
+		$('#normal').css('text-decoration','line-through');
+	})
+	
+	$('#nosale').click(function(){
+		var price = document.getElementById("people");
+		var ret = price.value * 9000;
+		$('#price').val(ret);
+		
+		$('#normal').css('text-decoration','none');
+		$('#jojo').css('text-decoration','line-through');
+	})
+	$('#nosale1').click(function(){
+		var price = document.getElementById("people");
+		var ret = price.value * 9000;
+		$('#price').val(ret);
+		$('#normal').css('text-decoration','none');
+		$('#jojo').css('text-decoration','line-through');
+	})
+	$('#nosale2').click(function(){
+		var price = document.getElementById("people");
+		var ret = price.value * 9000;
+		$('#price').val(ret);
+	})
+	$('#nosale3').click(function(){
+		var price = document.getElementById("people");
+		var ret = price.value * 9000;
+		$('#price').val(ret);
+		$('#normal').css('text-decoration','none');
+		$('#jojo').css('text-decoration','line-through');
+	})
+
+		$('#nosale4').click(function(){
+		var price = document.getElementById("people");
+		var ret = price.value * 9000;
+		$('#price').val(ret);
+		$('#normal').css('text-decoration','none');
+		$('#jojo').css('text-decoration','line-through');
+	})
+
+	$('#option').click(function(){
+		$('#opt').slideToggle();
+	})
+
+})
+</script>
+<style>
+nav {
+	width: 520px;
+}
+ul{
+margine: 0px;
+padding: 0px;
+float:left;
+}
+ul li {
+float:left;
+	display: none;
+}
+
+label: hover ul li{
+	display: block;
+}
+
+.slash{
+	text-decoration: line-through;
+}
+
+</style>
+
+</head>
+<body>
+	<header>
+		<h1>영화 예매</h1>
+	</header>
+
+	<h2>쿵푸팬더</h2>
+	<a href="First.html"> <img src="../images/movie_image.jpg"
+		width="300px" height="400px">
+	</a>
+
+	<div>
+		상영관<select name="상영관">
+			<optgroup label="상영관">
+				<option value="1">CGV</option>
+				<option value="2">LotteCinema</option>
+				<option value="3">MegaBox</option>
+			</optgroup>
+		</select> 날짜선택<input type="date" ,date=date>
+	</div>
+
+	<nav>
+		<fieldset>
+			<legend> 시간선택 </legend>
+			<label><input type="radio" id="sale">08:30
+			</label> 
+				<label><input type="radio" id="nosale">11:00
+				 </label>
+				<label><input type="radio" id="nosale1">14:20
+				 </label>
+				<label><input type="radio" id="nosale2">17:25
+				 </label>
+				 <label><input type="radio" id="nosale3">20:10
+				 </label>
+				<label><input type="radio" id="nosale4">23:05
+				 </label>
+		</fieldset>
+	</nav>
+	<br>
+	<div>
+	요금 <a id="normal">\9,000</a> <a id="jojo">\5,000</a>
+	</div>	
+	
+	<br>
+	<div>
+	인원 <input id="people" type="number" placeholder="0">
+	</div>
+	<br>
+	<div>
+	금액 <input type="text" id="price"></p>
+	</div>
+	<br>
+	<div>
+	<label><input type="checkbox", id="option">옵션
+				 </label>
+	</div>
+	
+	<br>
+	<nav id="opt">
+		<fieldset>
+			<legend></legend>
+			<label><input type="checkbox">팝콘
+				 </label>
+				 <label><input type="checkbox">콜라
+				 </label>
+		</fieldset>
+	</nav>
+</body>
+
+
+
+
+</html>
