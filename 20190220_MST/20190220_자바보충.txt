@@ -1,0 +1,17 @@
+1. System : 어떤 목적을 갖고 있는 일련의 체계
+2. 플랫폼 : 컴퓨터 시스템의 기반. OS보다 넓은 개념.
+3. Framework : sw의 기능들에 해당하는 부분의 설계와 구현을 재 사용하도록 협업화된 형태로 제공하는 sw환경.
+장점 : 최적화 되었고, 속도가 빠름. 개발 속도도 빨라짐. 코드가 표준화 되면서 가독성이 높아지고, 유지보수가 좋아짐. 
+견고성을 위해서도 사용된다.
+단점 : 학습하는데 어렵다. 불 필요한 기능을 포함할 수 있다.
+4. SW 설계 노하우 : Architecture(구조) DesignPattern, Idiom(cording)
+5. API : 라이브러리. 미리 만들어진 것을 통하여 개발을 수월하게 해준다.
+6. Object: (데이터+기능)의 역할.
+7. 객체지향의 3대 특징 : Polymorphism(다형성, 하나의 명령의 다양한 동작), Encapsulation(캡슐화, 외부에 공개 할 정보 및 비공개 정보 분류)
+inheritance(상속, 상속을 통해 상위 클래스의 정보를 이용 가능)
+8. DAO (Data Access Object), DTO(Data Trans Object), VO(Value Object)
+9. Controller -> 요청을 분석, 제어한다. 하나의 클래스에 너무 많은 기능을 부여하면 어려워짐.
+10. 하나의 목적에 맞게 Cohesion(응집력을 높이고), Coupling(결합력을 낮춘다)
+11. MVC-> 데이터 처리부 = Model/ 데이터 제어(요청제어) Controller / 화면(View) 
+12. Andriod 는 view가 컨트롤러의 역할도 같이 함. 이런 것을 Presentation이라고 일컫는다.
+즉, MVP 패턴임.
