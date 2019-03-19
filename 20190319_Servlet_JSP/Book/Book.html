@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서 등록화면</title>
+<style type="text/css">
+#top{
+padding-left: 50px;
+}
+
+#star{
+color: yellow;
+}
+</style>
+</head>
+<body>
+
+<form action=/ServletProject/ResultServlet method=POST>
+		<header> 
+ 		<h1>도서 등록 화면</h1> 
+ 	</header> 
+ 	<hr>
+ 	<div id="top"><a id="star">*</a> 표시가 된 항목은 필수 입력 항목입니다.</div>
+ 	<hr>
+ 	<div><a id="star">*</a> 도서번호 <input name=fir type="text"  autofocus required = "required"> - <input name=mid type="text"> - <input name=last type="text">  </div>
+ 	<br>
+ 	<div><a id="star">*</a> 도서제목 <input name=title type="text"  autofocus required = "required">  </div>
+ 	<br>
+ 	
+ 	<div> 
+ 		<a id="star">* </a>도서종류<select name=bookkind  autofocus required = "required"> 
+ 			<optgroup label="도서종류"> 
+ 				<option value="study">참고서</option> 
+ 				<option value="fiction">소설</option> 
+ 				<option value="commic">만화</option> 
+ 			</optgroup> 
+ 		</select> 
+ 	</div> 
+ 	<br>
+ 	<nav> 
+ 			종류
+ 			<label><input type="radio" name=kind value="Domestic">국내도서
+ 			</label>  
+ 				<label><input type="radio" name=kind value="Foregin">외국도서
+ 				 </label> 
+ 	</nav> 
+ 	<br> 
+ 	<div><a >*</a> 출판일 <input name=date type="text">  </div>
+ 	<br> 
+ 	<div> 
+ 		<a>* </a>출판사<select name=cor> 
+ 			<optgroup label="출판사"> 
+ 				<option value="visang">비상</option> 
+ 				<option value="hanbic">한빛미디어</option> 
+ 			</optgroup> 
+ 		</select> 
+ 	</div> 
+	<br>
+	<div><a id="star">*</a> 저자 <input name=name type="text" autofocus required = "required">  </div>
+ 	<br> 
+	<div><a>*</a> 도서가격 <input name=price type="text"> <select name="원"><optgroup label="원"> 
+ 				<option value="1">원</option> </select> </div>
+ 	<br> 
+ 	* 요약내용
+        <textarea name=comment rows=2  ></textarea>
+       <br><input type=submit><input type=reset>
+       </form>
+</body>
+</html>
