@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>JdcSurvey</title>
+  </head>
+
+  <body BGCOLOR="PINK">
+    <form action=/ServletProject/Survey method=POST>
+   	  <h2>General Survey...</h2>
+      <h3>dept: <input type=text name=dept><br></h3>
+      <BR><h3>How Many Employees in your Company?</h3>
+        <br><input type=radio name=employee value=1-100>1-100
+        <br><input type=radio name=employee value=100-200>100-200
+        <br><input type=radio name=employee value=200-300>200-300
+		<br><input type=radio name=employee value=300-400>300-400
+        <br><input type=radio name=employee value=500-more>500-more
+
+      <h3>General Comments?</h3>
+        <textarea name=comment rows=7 ></textarea>
+
+      <h3>What IDEs do you use?</h3><br>
+		<input type=checkbox name=ide value='JavaWorkShop'>JavaWorkShop<br>
+		<input type=checkbox name=ide value='J++'>J++<br>
+		<input type=checkbox name=ide value='JBuilder'>JBuilder<br>
+		<input type=checkbox name=ide value='Cafe'>Cafe<br>
+        <br><input type=submit><input type=reset>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
