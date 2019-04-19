@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>product_info</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0//css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+
+</head>
+<style>
+th {
+	width: 75px;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+				var ctx = document.getElementById("myChart").getContext('2d');
+// 				$('#btnChartDraw').click(
+// 						function() {
+							var myDoughnutChart = new Chart(ctx, {
+								type : 'doughnut',
+								data : {
+									datasets : [ {
+										data : [ 10, 2, 10, 15, 3, 22 ],
+										backgroundColor : [
+												'rgba(255, 99, 132, 0.2)',
+												'rgba(54, 162, 235, 0.2)',
+												'rgba(255, 206, 86, 0.2)',
+												'rgba(75, 192, 192, 0.2)',
+												'rgba(153, 102, 255, 0.2)',
+												'rgba(255, 159, 64, 0.2)',
+												'rgba(200, 122, 64, 0.2)'
+
+										]
+									} ],
+
+									// These labels appear in the legend and in the tooltips when hovering different arcs
+									labels : [ '탄수화물', '단백질', '지방', '당류', '나트륨', '콜레스테롤', '포화 지방산', '트랜스지방' ],
+
+								},
+								options : {
+									responsive : false
+								}
+							});
+							// 							$('#donut_example').append(myDoughnutChart);
+// 						})
+			})
+</script>
+
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h2>제품 정보</h2>
+				<hr>
+				<table class="table">
+					<tbody>
+						<tr>
+							<td rowspan="5"><img style="height: 300px; width: 300px"
+								src="../img/맛있는우유GT.jpg" /></td>
+						</tr>
+						<tr>
+							<th scope="row">제품명</th>
+							<td>맛있는우유GT</td>
+						</tr>
+						<tr>
+							<th scope="row">제조사</th>
+							<td>빙그레</td>
+						</tr>
+						<tr>
+							<th scope="row">원재료</th>
+							<td>올해 들어서도 식품·외식 가격이 무섭게 상승 중이다. 최저임금 인상 여파에 원유 가격 상승까지
+								이어지면서 가공식품, 커피, 버거 등 분야를 가리지 않고 줄인상이 이어지고 있다. 22일 관련 업계에 따르면
+								롯데제과가 나뚜루 등 아이스크림 가격을 인상한다. 나뚜루는 3월부터 유통점 및 전문점에서 판매되는 아이스크림 및
+								디저트 총 20종의 가격을 평균 12.1% 인상하기로 했다. 나뚜루 완제품은 바, 컵, 파인트 3종이 평균
+								10.9% 인상된다. 바와 컵 제품은 기존 3500원에서 3900원으로 400원 인상된다. 파인트는 9500원에서
+								1만500원으로 1000원 오른다. 콘 제품은 인상 대상에서 제외된다</td>
+						</tr>
+						<tr>
+							<th scope="row">알레르기 성분</th>
+							<td>우유, 땅콩, 대추</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr>	
+				<div class="col-md-2 col-md-offset-9">
+					수량
+					<input style="margin-bottom:5px" type="number">
+					<br>
+					<button type="button" class="btn btn-primary">추가</button>
+					<button type="button" class="btn btn-primary">찜</button>
+				</div>
+				<br>
+				<div class="col-md-7 col-md-offset-1"> 
+					<canvas id="myChart" width="400px" height="400px"></canvas>
+				</div>
+				<div class="col-md-4">
+					<table style=" margin-top:40px;" class="table table-striped">
+								<tbody>
+									<tr>
+										<th colspan="2">총 칼로리</th>
+										<td></td>
+										<td>120</td>
+									</tr>
+									<tr>
+										<th colspan="2">탄수화물</th>
+										<td></td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<th colspan="2">단백질</th>
+										<td></td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<th colspan="2">지방</th>
+										<td></td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<th colspan="2">당류</th>
+										<td></td>
+										<td>15</td>
+									</tr>
+									<tr>
+										<th colspan="2">나트륨</th>
+										<td></td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<th colspan="2">콜레스테롤</th>
+										<td></td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<th colspan="2">포화 지방산</th>
+										<td></td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<th colspan="2">트랜스지방</th>
+										<td></td>
+										<td>0</td>
+									</tr>
+								</tbody>
+							</table>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 	<button type="button" class="btn btn-primary" id="btnChartDraw">차트그리기</button> -->
+	
+</body>
+</html>
