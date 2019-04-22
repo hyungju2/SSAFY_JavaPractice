@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--  Car c = new Car(); 풀네임으로 작성, 설정 파일에 빈 객체를 등록 -->
+
+	<bean id = "c" class="dI4_1.Car"
+	init-method="myinitMethod"
+	destroy-method="mydestoryMethod">
+	</bean>
+
+</beans>

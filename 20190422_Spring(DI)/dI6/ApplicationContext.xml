@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="koreatire" class="dI6.KoreaTire"></bean>
+	<bean id="chinatire" class="dI6.ChinaTire"></bean>
+
+	<bean id="car" class="dI6.Car">
+		<property name="tire" ref="koreatire"> <!-- set메소드로 만든 모든 것이 들어감. -->
+			<!-- Car클래스의 Setter 메서드의 목록이 자동완성됨. -->
+			
+		</property>
+	</bean>
+
+</beans>
