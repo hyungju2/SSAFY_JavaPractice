@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+	
+	<bean id ="bookReq" class="com.ssafy.model.repository.BookRepositoryImpl"></bean>
+	<bean id="MyAspect" class="com.ssafy.model.repository.MyAspect"></bean>
+	
+	<aop:config>
+	<aop:aspect ref="MyAspect">
+			<aop:pointcut expression="execution(public * com.ssafy.model.repository.*.selectAll(..))" id="myPt"/>
+					<aop:before method="doBefore" pointcut-ref="myPt"/>
+					<aop:after-returning method="doAfterReturning" pointcut-ref="myPt" returning="rt"/> <!-- 리턴값 등록 -->
+					<aop:after method="doAfter" pointcut-ref="myPt"/>
+			</aop:aspect>
+	</aop:config>
+	
+	
+</beans>
