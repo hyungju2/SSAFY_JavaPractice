@@ -1,0 +1,10 @@
+create table product(
+code int AUTO_INCREMENT PRIMARY key,
+name varchar(10),
+price int,
+pictureurl varchar(20),
+description varchar(20)
+);
+
+insert into product value(1, 'Airpods',200000, 'abc','Apple airpods');
+insert into product value(2, 'iPhone',1200000, 'abc','Apple iPhone');
