@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vue day2</title>
+<!-- 도움되는 콘솔 경고를 포함한 개발 버전 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id = "mydirective">
+		<div v-mystyle="{color:'blue', fontSize:'20px', border:'1px', borderStyle:'solid'}">SSAFY</div>
+</div>
+
+
+<div id='app'>
+	<fieldset id ='checkboxArea1'>
+		<legend>이름 체크</legend>
+		<template v-for="sname in names">
+			<input type="checkbox" name ="box" v-bind:value="sname" v-model="name"/><label>{{sname}}</label>
+		</template>
+	</fieldset>
+	<fieldset id='checkboxArea2' v-if='moreZero'>
+		체크한 이름: : <span v-html="name"></span>
+	</fieldset>
+</div>
+
+<div id='app2'>
+	<fieldset id ='checkboxArea3'>
+		<legend>숫자 체크</legend>
+		<template v-for="snumber in numbers">
+			<input type="radio" name ="box" v-bind:value="snumber" v-model="number"/><label>{{snumber}}</label>
+			<br>
+		</template>
+	</fieldset>
+	<fieldset id='checkboxArea4' v-if='moreZero2'>
+		선택 : <span v-html="number"></span>
+	</fieldset>
+</div>
+
+<div id='app3'>
+	<fieldset id ='checkboxArea3'>
+	<legend>알파벳 체크</legend>
+			<select v-model="alpha" multiple="multiple">
+	
+		<template v-for="salpha in alphas">
+				<option>{{salpha}}</option>
+		</template>
+		
+			</select>
+	</fieldset>
+	<fieldset id='checkboxArea6' v-if='moreZero3'>
+		선택 : <span v-html="alpha"></span>
+	</fieldset>
+	
+</div>
+
+	<script type="text/javascript">
+		var model = {
+			name: [], //변수의 초기화가 중요
+			names : ["Jack","John","Mike"],
+			number:[],
+			numbers : ["ONE","TWO"],
+			alpha: [],
+			alphas:["A","B","C"]
+		};
+		
+		var signup_section = new Vue({
+			el : '#app',
+			data : model,
+			computed : {
+				moreZero : function() {
+					return this.name.length>0;
+				}
+			}
+		});
+		
+		var signup_section2 = new Vue({
+			el : '#app2',
+			data : model,
+			computed : {
+				moreZero2 : function() {
+					return this.number.length>0;
+				}
+			}
+		});
+		
+		var signup_section3 = new Vue({
+			el : '#app3',
+			data : model,
+			computed : {
+				moreZero3 : function() {
+					return this.alpha.length>0;
+				}
+			}
+		});
+		Vue.directive("mystyle", 
+				{ bind(elm, binding, nodename){
+					elm.style.color = binding.value.color;
+					elm.style.fontSize = binding.value.fontSize;
+					elm.style.border = binding.value.border;
+					elm.style.borderStyle = binding.value.borderStyle;
+					elm.style.textAlign = 'center';
+					console.log(binding);
+				}
+		});
+		
+		var mydirective = new Vue({
+			el : '#mydirective'
+			
+		});
+		Vue.config.devtools = true;
+		
+	</script>
+</body>
+</html>
