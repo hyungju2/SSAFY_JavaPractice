@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="./table.css" />
+<title>SSAFY</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+</head>
+<body>
+<div id='app'>
+	<div class='headtitle'>
+		<h2>SSAFY id로 검색</h2>
+	</div>
+	<span v-if="loading" class="warn">로딩중</span>
+		<span v-if="errored" class="warn">에러. 다시요청해주세요</span>
+	<div class='search_box'>
+		<select v-model='page' @change='findbyid' v-cloak>
+			<option v-for="n in count" v-text="n"></option>
+		</select>
+	</div>
+	<table class='list_table'>
+		<col width="10%">
+		<col width="20%">
+		<col width="20%">
+		<col width="30%">
+		<tr>
+			<th>아이디</th>
+			<th>이름</th>
+			<th>성</th>
+			<th>avatar</th>
+		</tr>
+		<tr v-for="user in users">
+			<td v-html="user.id"></td>
+			<td v-html="user.first_name"></td>
+			<td v-html="user.last_name"></td>
+			<td>이미지 </td>
+		</tr>
+	</table>
+</div>
+<script type="text/javascript">
+new Vue({
+	el : '#app',
+	data () {
+		return {
+			page : 1, // 기본값
+			count : [], // 총 보여줄 페이지
+			users : [], // 읽어온 사람 정보 데이터
+			loading : true,
+			errored : false
+		}
+	},
+	methods : {
+		findbyid(){
+			console.log("메서드 호출"); 
+		}
+	},
+	mounted () { // 처음에 데이터를 읽어오기
+// 		axios.get('./emp.json')
+		axios.get('https://reqres.in/api/users') 
+			.then(response => {
+				this.length = response.data.total_pages; // 전체 페이지 수
+				for (var i = 0; i < this.length; i++) {
+					this.count.push(i); // 배열의 원소 추가
+				}
+				console.log(this.count); // 배열 잘 저장되었는지 출력
+				this.users = response.data.data;
+			})
+			.catch(error => {
+				console.log(error);
+				this.errored = true;
+			})
+			.then(() => this.loading = false)
+	}
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
